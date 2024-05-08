@@ -61,7 +61,7 @@ def make_prediction(input_data):
 # Questions for user input
 age = st.number_input('Enter your age',step=1, format='%d')
 weight = st.number_input('Enter your weight(in kg)',step=0.1, format='%0.1f')
-height = st.number_input('Enter your height(in cm)',step=1 format='%d')
+height = st.number_input('Enter your height(in cm)',step=1,format='%d')
 period_days = st.number_input('How long does your period last ? (in Days)\nexample- 1,2,3,4.....',step=1,format='%d')
 st.image("blood_group.jpg",width=400)
 blood_group = st.selectbox('Enter your blood group: 11 indicates A+, 12 indicates A-, 13 indicates B+, 14 indicates B-, 15 indicates O+, 16 indicates O-, 17 indicates AB+, 18 indicates AB-',['11','12','13','14','15','16','17','18'])
